@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+# Ikman.lk Clone App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Overview
+**Ikman.lk Clone App** is a beginner-friendly mobile application built with **React Native** and **Expo**.  
+This project is a clone of **Ikman.lk**, one of Sri Lanka’s most popular classified advertisement platforms.  
+The app allows users to browse categories, view listings, check product details, and navigate using bottom tabs and stack navigation.  
 
-## Get started
+This project uses **dummy data only** and demonstrates React Native fundamentals such as components, props, state management, FlatList, and React Navigation.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+### Core Features
+- Browse categories: Cars, Electronics, Jobs, Property.
+- View product listings under each category.
+- Check product details: title, price, description, and images.
+- Navigate between Home, My Ads, Profile, and other screens using Bottom Tab Navigation.
+- Smooth stack navigation between listings and details.
 
-   ```bash
-   npx expo start
-   ```
+### Additional Features
+- **Create Listing Flow:** Users can create new ads, select categories, add details, and upload images.
+- **Authentication:** Login, Register, and Forgot Password screens.
+- **Chat Functionality:** View chat list and individual chat screens.
+- **Favorites:** Save favorite items for later.
+- **Settings:** Account and notification settings.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+app/
+├── _layout.tsx # Root Stack Navigator
+├── (tabs)/ # Bottom Tab Navigation
+│ ├── _layout.tsx # Bottom Tabs Layout
+│ ├── index.tsx # Home Screen
+│ ├── search.tsx # Search Screen
+│ ├── chat.tsx # Chat Screen
+│ ├── myads.tsx # My Ads Screen
+│ ├── profile.tsx # Profile Screen
+├── listings/
+│ ├── [categoryId].tsx # Listings by category
+│ ├── details/[id].tsx # Product details page
+├── create-listing/ # For creating new ads
+│ ├── details-form.tsx # Details form
+├── auth/ # Authentication flows
+│ ├── login.tsx # Login screen
+│ ├── register.tsx # Registration screen
+│ ├── forgot-password.tsx # Password recovery
+├── chat/ # Enhanced chat functionality
+│ ├── [chatId].tsx # Individual chat screen
+│ ├── list.tsx # Chat list screen
+├── favorites/ # Saved items
+│ ├── index.tsx # Favorites list
+├── settings/ # App settings
+│ ├── profile.tsx # Profile settings
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+Contributing
+This is a beginner-level project. Feel free to submit issues or pull requests to improve the app UI/UX or add features.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+License
+This project is for learning purposes only.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Author: MRFR.Nifla
+Project: Ikman.lk Mobile App Clone (React Native + Expo)
