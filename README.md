@@ -30,6 +30,7 @@ This project uses **dummy data only** and demonstrates React Native fundamentals
 ## Project Structure
 
 app/
+
 ├── _layout.tsx # Root Stack Navigator
 ├── (tabs)/ # Bottom Tab Navigation
 │ ├── _layout.tsx # Bottom Tabs Layout
@@ -38,20 +39,26 @@ app/
 │ ├── chat.tsx # Chat Screen
 │ ├── myads.tsx # My Ads Screen
 │ ├── profile.tsx # Profile Screen
+
 ├── listings/
 │ ├── [categoryId].tsx # Listings by category
 │ ├── details/[id].tsx # Product details page
+
 ├── create-listing/ # For creating new ads
 │ ├── details-form.tsx # Details form
 ├── auth/ # Authentication flows
+
 │ ├── login.tsx # Login screen
 │ ├── register.tsx # Registration screen
 │ ├── forgot-password.tsx # Password recovery
+
 ├── chat/ # Enhanced chat functionality
 │ ├── [chatId].tsx # Individual chat screen
 │ ├── list.tsx # Chat list screen
+
 ├── favorites/ # Saved items
 │ ├── index.tsx # Favorites list
+
 ├── settings/ # App settings
 │ ├── profile.tsx # Profile settings
 
